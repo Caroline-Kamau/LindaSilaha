@@ -28,4 +28,4 @@ Route::get('/holder', function(){
     echo "Hello Holder";
 })->middleware('auth','holder');
 
-Route::get('/allStudents', 'WeaponController@index');
+Route::get('/allWeapons', 'WeaponController@index');
