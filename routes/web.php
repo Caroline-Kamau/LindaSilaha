@@ -21,7 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', function(){
     echo "Hello Admin";
+
 })->middleware('auth','admin');
+
 
 
 Route::get('/holder', function(){
@@ -29,3 +31,9 @@ Route::get('/holder', function(){
 })->middleware('auth','holder');
 
 Route::get('/allWeapons', 'WeaponController@index');
+
+Route::post('/weapons/store','WeaponController@store');
+
+Route::get('/addWeapons','WeaponController@create');
+
+
