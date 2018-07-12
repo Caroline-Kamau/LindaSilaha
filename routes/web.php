@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', function(){
+    echo "Hello Admin";
+})->middleware('auth','admin');
+
+
+Route::get('/holder', function(){
+    echo "Hello Holder";
+})->middleware('auth','holder');
+
+Route::get('/allStudents', 'WeaponController@index');
