@@ -17,7 +17,7 @@
                     You are logged in!
 
                     <div>
-                        {{--<a href="/addWeapons">Add Weapons </a>--}}
+                 {{--<a href="/addWeapons">Add Weapons </a>--}}
 
                     </div>
                 </div>

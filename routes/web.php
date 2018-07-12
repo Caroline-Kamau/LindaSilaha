@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', function(){
     echo "Hello Admin";
-
+    return view('addWeapons');
 })->middleware('auth','admin');
 
 
