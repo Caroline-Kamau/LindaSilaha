@@ -11,7 +11,7 @@ class WeaponController extends Controller
     public function index()
     {
         $weapon = Weapon::all();
-        return view('silaha/allWeapons',['weapons'=>$weapon]);
+        return view('allWeapons', ['weapons'=>$weapon]);
     }
 
     /**
